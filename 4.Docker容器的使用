@@ -1,0 +1,28 @@
+# Docker容器的操作
+
+> Auth: 王海飞
+>
+> Data：2020-09-12
+>
+> QQ群：223058292
+>
+> WX：wanghaifeige
+>
+> Email：779598160@qq.com
+>
+> github：https://github.com/coco369/docker-depth-learning
+>
+> 知乎Docker专栏：<https://zhuanlan.zhihu.com/c_1285288092883734528>
+>
+> 知乎Python入门专栏：<https://zhuanlan.zhihu.com/c_1277570999509757952>
+
+------
+
+​	Docker 核心：容器，首先重点讲解一下容器的基本操作。
+
+### 1. 容器（Container）
+
+容器是基于镜像创建的可运行实例，并且单独存在，一个镜像可以创建出多个容器。
+
+![](images\4docker-容器层.png)
+
