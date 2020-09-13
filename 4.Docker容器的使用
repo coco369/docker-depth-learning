@@ -18,7 +18,7 @@
 
 ------
 
-​	Docker 核心：容器，首先重点讲解一下容器的基本操作。
+​	    镜像包含了容器运行所需要的文件系统结构和内容，是静态的只读文件，而容器则是在镜像的只读层上创建了可写层，并且容器中的进程属于运行状态，容器是真正的应用载体。接下来讲讲Docker 核心：容器，重点讲解一下容器的基本操作。
 
 ### 1. 容器（Container）
 
@@ -161,7 +161,39 @@ docker rm -f 容器名或者容器id
 
 
 
+##### 2.5 导出容器
 
+- **导出容器**
+
+使用`docker export CONTAINER`命令导出一个容器到文件，不管此时该容器是否处于运行中的状态。
+
+执行导出命令：
+
+```
+docker export new_busybox > new_busybox.tar
+```
+
+执行以上命令后会在当前文件夹下生成 new_busybox.tar 文件，我们可以将该文件拷贝到其他机器上，通过导入命令实现容器的迁移。
+
+- **导入容器**
+
+通过`docker export`命令导出的文件，可以使用`docker import`命令导入，执行完`docker import`后会变为本地镜像，最后再使用`docker run`命令启动该镜像，这样我们就实现了容器的迁移。
+
+导入容器的命令格式为 docker import [OPTIONS] file|URL [REPOSITORY[:TAG]]。接下来将上一步导出的镜像文件导入到其他机器的 Docker 中并启动它。
+
+使用`docker import`命令导入上一步导出的容器
+
+```
+docker import new_busybox.tar new_busybox:test
+```
+
+此时，new_busybox.tar 被导入成为新的镜像，镜像名称为 new_busybox:test 。下面，我们使用`docker run`命令启动并进入容器，查看上一步创建的临时文件
+
+```
+docker run -it busybox:test sh
+```
+
+**重点：**通过`docker export`和`docker import`命令配合实现了容器的迁移
 
 ### 3. 网络动态IP分配
 
