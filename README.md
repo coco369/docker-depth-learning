@@ -12,6 +12,10 @@ docker的深入了解与掌握
 - [Dockerfile的编写规则](5.Dockerfile的编写规则.md)
 - [docker安全性能了解](7.Docker安全性能了解.md)
 
+#### **docker底层技术：**
+
+- [docker底层资源隔离：Namespace](9.Docker底层资源隔离namespace.md)
+
 #### docker架构设计：
 
 - [docker架构设计](6.Docker架构设计.md)
