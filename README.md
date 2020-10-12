@@ -1,5 +1,5 @@
 # docker深度学习
-​	![](/Users/coco/my_wordspace/docker-depth-learning/images/logo.png)
+​	![](images/logo.png)
 
 Docker深入了解与掌握： ![](<https://img.shields.io/badge/docker-19.0.3.6-blue>)   ![](<https://img.shields.io/badge/author-%E7%8E%8B%E6%B5%B7%E9%A3%9E-blue>)
 
