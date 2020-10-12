@@ -19,6 +19,7 @@ Docker的学习大致分为5个阶段：Docker基础内容、Docker底层技术�
 #### **2. Docker底层技术：**
 
 - [docker底层资源隔离：Namespace](9.Docker底层资源隔离namespace.md)
+- [docker底层资源限制：Cgroups](10.Docker底层资源限制cgroups.md)
 
 #### 3. Docker架构设计：
 
