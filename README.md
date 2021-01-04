@@ -32,3 +32,7 @@ Docker的学习大致分为5个阶段：Docker基础内容、Docker底层技术�
 
  - [Docker Compose编排](./实战演示/Docker-Compose编排技术.md)
 
+#### 6. Harbor搭建
+
+ - [Docker Harbor](./Harbor私有仓库搭建.md)
+
